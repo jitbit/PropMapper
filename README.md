@@ -5,7 +5,9 @@ Property mapper for .NET. Flat and basic, but **VERY FAST**.
 
 Just one (1) line of code:
 
-`DestType destObject = PropMapper<SourceType, DestType>.From(srcObj);`
+```cs
+DestType destObject = PropMapper<SourceType, DestType>.From(srcObj);
+```
 
 or
 
