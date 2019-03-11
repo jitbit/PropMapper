@@ -19,17 +19,18 @@ PropMapper<SourceType, DestType>.CopyTo(srcObj, destObject);
 
 ## Benchmarks
 
-Mapping a simple object with 50 properties, over 100k iterations. And I even cached Automapper's `config` which is kinda unfair (but without caching it just times out)
+Mapping a simple object with 50 properties, over 100k iterations.
 
 Results:
 
 | Mapper  | Results |
 | ------------- | ------------- |
-| Automapper   | 335ms  |
+| Automapper   | 32490ms  |
+| Automapper with cached `config` object | 335ms  |
 | **PropMapper**   | **25ms**  |
 | Manual code  | 10ms  |
 
-Object type if you insist
+PropMapper is more than 13 times faster. Here's the class we tested on:
 
 ```cs
 public class Tester
@@ -41,8 +42,6 @@ public class Tester
 	//etc. 50 times
 }
 ```
-
-PropMapper is more than 10 times faster.
 
 ## Limitations 
 
