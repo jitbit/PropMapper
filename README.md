@@ -68,3 +68,7 @@ public class Employee : Person
 	}
 }
 ```
+
+# Nuget? Unit tests?
+
+Currently it's just one C# file, Nuget, tests and benchmarks coming later. The tool is in heavy use in other projects of ours, so it's regularly unit-tested anyway.
