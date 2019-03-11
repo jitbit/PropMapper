@@ -3,7 +3,7 @@ Property mapper for .NET. Flat and basic, but **VERY FAST**.
 
 ## Usage
 
-Just one (1) line of code:
+Just one line of code:
 
 ```cs
 DestType destObject = PropMapper<SourceType, DestType>.From(srcObj);
