@@ -1,3 +1,5 @@
+<link rel="canonical" href="https://jitbit.github.io/PropMapper/" />
+
 # PropMapper
 Property mapper for .NET. Flat and basic, but **VERY FAST**.
 
