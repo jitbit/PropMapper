@@ -64,7 +64,7 @@ public class Employee : Person
 {
 	public string Title { get; set; }
 	
-	public DerivedClass(Person person)
+	public Employee(Person person)
 	{
 		PropMapper<Person, Employee>.CopyTo(person, this);
 	}
