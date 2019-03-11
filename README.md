@@ -1,5 +1,3 @@
-<link rel="canonical" href="https://jitbit.github.io/PropMapper/" />
-
 # PropMapper
 Property mapper for .NET. Flat and basic, but **VERY FAST**.
 
@@ -18,6 +16,8 @@ var srcObj = new SourceType();
 var destObject = new DestType();
 PropMapper<SourceType, DestType>.CopyTo(srcObj, destObject);
 ```
+
+Install by including the .cs file in your project
 
 ## Benchmarks
 
