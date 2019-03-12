@@ -6,15 +6,15 @@ Property mapper for .NET. Flat and basic, but **VERY FAST**.
 Just one line of code:
 
 ```cs
+//instantiating a new object
 DestType destObject = PropMapper<SourceType, DestType>.From(srcObj);
 ```
 
 or
 
 ```cs
-var srcObj = new SourceType();
-var destObject = new DestType();
-PropMapper<SourceType, DestType>.CopyTo(srcObj, destObject);
+//using with existing objects
+PropMapper<SourceType, DestType>.CopyTo(srcObj, destObj);
 ```
 
 Install by including the .cs file in your project
