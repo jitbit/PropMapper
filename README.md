@@ -1,5 +1,14 @@
 # PropMapper
+
 Property mapper for .NET. Flat and basic, but **VERY FAST**.
+
+Just one cs-file, only 80 lines of code (sorry, I spend a lot of time in JavaScript world where obsessing over file size minified/gzipped is a thing).
+
+## Installation
+
+Drop the cs-file into your project or install via [Nuget](https://www.nuget.org/packages/PropMapper/)
+
+`Install-Package PropMapper -Version 1.0.0`
 
 ## Usage
 
@@ -72,6 +81,6 @@ public class Employee : Person
 }
 ```
 
-# Nuget? Unit tests?
+# What's next?
 
-Currently it's just one C# file, Nuget, tests and benchmarks coming later. The tool is in heavy use in [other projects](https://www.jitbit.com/) of ours, so it's regularly unit-tested anyway.
+Currently it's just one C# file, with Nuget, unit tests, a proper library and more benchmarks coming later. The tool is in heavy use in [other projects](https://www.jitbit.com/) of ours, so it's regularly unit-tested anyway.
