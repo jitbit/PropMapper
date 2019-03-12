@@ -8,7 +8,7 @@ Just one cs-file, only 80 lines of code (sorry, I spend a lot of time in JavaScr
 
 Drop the cs-file into your project or install via [Nuget](https://www.nuget.org/packages/PropMapper/)
 
-`Install-Package PropMapper -Version 1.0.0`
+`Install-Package PropMapper`
 
 ## Usage
 
@@ -25,8 +25,6 @@ or
 //using with existing objects
 PropMapper<SourceType, DestType>.CopyTo(srcObj, destObj);
 ```
-
-Install by including the .cs file in your project
 
 ## Benchmarks
 
