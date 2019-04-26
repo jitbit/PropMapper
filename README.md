@@ -81,4 +81,4 @@ public class Employee : Person
 
 # What's next?
 
-Currently it's just one C# file, with Nuget, unit tests, a proper library and more benchmarks coming later. The tool is in heavy use in [other projects](https://www.jitbit.com/) of ours, so it's regularly unit-tested anyway.
+Currently it's just one C# file, with unit tests, a proper library and more benchmarks coming later. The tool is in heavy use in [other projects](https://www.jitbit.com/) of ours, so it's regularly unit-tested anyway.
