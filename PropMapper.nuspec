@@ -1,0 +1,21 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2011/08/nuspec.xsd">
+  <metadata>
+    <id>PropMapper</id>
+    <version>1.0.1</version>
+    <authors>jitbit</authors>
+    <owners>jitbit</owners>
+    <requireLicenseAcceptance>false</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/jitbit/PropMapper</licenseUrl>
+    <projectUrl>https://github.com/jitbit/PropMapper</projectUrl>
+    <iconUrl>https://github.com/jitbit/PropMapper</iconUrl>
+    <description>Simple object-object mapper for .NET</description>
+    <releaseNotes>Initial release</releaseNotes>
+    <copyright>Copyright Jitbit Software</copyright>
+    <tags>mapper object-mapper</tags>
+  </metadata>
+  <files>
+    <!-- Add files from an arbitrary folder that's not necessarily in the project -->
+    <file src="PropMapper.cs" target="content" />
+  </files>
+</package>
