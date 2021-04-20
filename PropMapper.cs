@@ -6,6 +6,26 @@ using System.Reflection;
 
 namespace Jitbit.Utils
 {
+    public static class ClassMapper
+    {
+        public static TOutput CreateCopy<TInput, TOutput>(TInput input) where TOutput : new()
+        {
+            TOutput op = new TOutput();
+            PropMapper<TInput, TOutput>.CopyTo(input, op);
+            return op;
+        }
+
+        public static IEnumerable<TOutput> CreateCopy<TInput, TOutput>(IEnumerable<TInput> inputArr) where TOutput : new()
+        {
+            foreach (var input in inputArr)
+            {
+                var op = new TOutput();
+                PropMapper<TInput, TOutput>.CopyTo(input, op);
+                yield return op;
+            }
+        }
+    }
+
 	//clones object public properties to another object
 	//uses Expressions (compiled and saved to static) - faster than Reflection
 	//(compilation happens with every new generic type call cause it's a new static class each time)
