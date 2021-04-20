@@ -6,8 +6,18 @@ using System.Reflection;
 
 namespace Jitbit.Utils
 {
+	/// <summary>
+    /// Creates new Instance and copies all public Properties to the OutPutType
+    /// </summary>
     public static class ClassMapper
     {
+        /// <summary>
+        /// Craete a new Object and Copy all Properties to the output Instance
+        /// </summary>
+        /// <typeparam name="TInput"></typeparam>
+        /// <typeparam name="TOutput"></typeparam>
+        /// <param name="input"></param>
+        /// <returns></returns>
         public static TOutput CreateCopy<TInput, TOutput>(TInput input) where TOutput : new()
         {
             TOutput op = new TOutput();
@@ -15,11 +25,19 @@ namespace Jitbit.Utils
             return op;
         }
 
+        /// <summary>
+        /// returns a Copy for each Input Instanz
+        /// All public Properties get copied
+        /// </summary>
+        /// <typeparam name="TInput"></typeparam>
+        /// <typeparam name="TOutput"></typeparam>
+        /// <param name="inputArr"></param>
+        /// <returns></returns>
         public static IEnumerable<TOutput> CreateCopy<TInput, TOutput>(IEnumerable<TInput> inputArr) where TOutput : new()
         {
-            foreach (var input in inputArr)
+            foreach (TInput input in inputArr)
             {
-                var op = new TOutput();
+                TOutput op = new TOutput();
                 PropMapper<TInput, TOutput>.CopyTo(input, op);
                 yield return op;
             }
