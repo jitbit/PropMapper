@@ -2,7 +2,7 @@
 
 Property mapper for .NET. Flat and basic, but **VERY FAST**.
 
-Just one cs-file, only 80 lines of code (sorry, I spend a lot of time in JavaScript world where obsessing over file size minified/gzipped is a thing).
+Just one cs-file, only 80 lines of code.
 
 ## Installation
 
