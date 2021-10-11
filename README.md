@@ -54,10 +54,6 @@ public class Tester
 }
 ```
 
-## Limitations 
-
-The project does not support nested properties at the moment, only first level properties.
-
 ## Under the hood
 
 We use compiled Expression trees, created in the static constructor and cached in a var, which makes it really fast.
