@@ -10,6 +10,8 @@ Drop the cs-file into your project or install via [Nuget](https://www.nuget.org/
 
 `Install-Package PropMapper`
 
+(this will will simply add the .cs file to your project, not a DLL-reference, so you're free of dependencies)
+
 ## Usage
 
 Just one line of code:
