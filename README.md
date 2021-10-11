@@ -58,7 +58,7 @@ public class Tester
 
 We use compiled Expression trees, created in the static constructor and cached in a var, which makes it really fast.
 
-## Use case
+## Use case: casting base class to derived class
 
 ```cs
 public class Person
