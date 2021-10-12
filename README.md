@@ -2,11 +2,11 @@
 
 Property mapper for .NET. Flat and basic, but **VERY FAST**.
 
-Just one cs-file, only 80 lines of code.
+Just [one cs-file](PropMapper.cs), only 80 lines of code.
 
 ## Installation
 
-Drop the cs-file into your project or install via [Nuget](https://www.nuget.org/packages/PropMapper/)
+Drop the cs-file into your project OR install via [Nuget](https://www.nuget.org/packages/PropMapper/)
 
 `Install-Package PropMapper`
 
